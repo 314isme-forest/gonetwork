@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package gonetwork;
+option go_package = "github.com/314isme/gonetwork";
+
+message SMessage {
+  string handler = 1;
+  string type = 2;
+  bytes proto = 3;
+}
